@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image View</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        background-color: #3498db;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    p {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+</style>
+
+<body>
+    <h1>CTC细胞计数</h1>
+    <img src="data:image/png;base64,{{ image_data }}" alt="Processed Image">
+    <p>Cell Count: {{ cell_count }}</p>
+    <a href="127.0.0.:5000">返回首页</a>
+</body>
+</html>
